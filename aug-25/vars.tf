@@ -7,6 +7,7 @@ variable "rhel7_servers" {
       key_name       = string
       sg_private_id  = string
       rhel7_hostname = string
+      iam_instance_profile = string
       tags           = map(string)
     }
   ))
@@ -21,6 +22,7 @@ variable "win2k16_servers" {
       key_name         = string
       sg_private_id    = string
       win2k16_hostname = string
+      iam_instance_profile = string
       tags             = map(string)
     }
   ))
